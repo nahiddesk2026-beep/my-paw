@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Indoor Cat Enrichment Guide">
+  <rect width="400" height="300" fill="#E8EFFD"/>
+  <circle cx="200" cy="150" r="85" fill="#1F4FE0" opacity="0.12"/>
+  <rect x="110" y="185" width="180" height="45" rx="14" fill="#1F4FE0"/>
+  <circle cx="200" cy="128" r="36" fill="#FFD21F"/>
+  <polygon points="172,108 182,78 198,100" fill="#FFD21F"/>
+  <polygon points="228,108 218,78 202,100" fill="#FFD21F"/>
+  <circle cx="188" cy="126" r="4" fill="#111827"/>
+  <circle cx="212" cy="126" r="4" fill="#111827"/>
+  <polygon points="196,136 204,136 200,141" fill="#1F4FE0"/>
+</svg>

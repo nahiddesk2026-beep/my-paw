@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Natural Freeze-Dried Dog Treats">
+  <rect width="400" height="300" fill="#F4F7FD"/>
+  <rect x="115" y="45" width="170" height="210" rx="18" fill="#1F4FE0"/>
+  <rect x="130" y="62" width="140" height="176" rx="12" fill="#FFFFFF"/>
+  <circle cx="200" cy="128" r="36" fill="#FFD21F"/>
+  <path d="M180 128c0-6 5-10 10-10 3 0 5 2 10 2s7-2 10-2c5 0 10 4 10 10s-5 10-10 10c-3 0-5-2-10-2s-7 2-10 2c-5 0-10-4-10-10z" fill="#1F4FE0"/>
+  <rect x="155" y="180" width="90" height="10" rx="5" fill="#DCE5F8"/>
+  <rect x="168" y="198" width="64" height="8" rx="4" fill="#E9EFFB"/>
+</svg>

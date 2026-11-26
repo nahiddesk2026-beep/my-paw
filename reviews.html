@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Product Reviews &amp; Comparisons — That's My Paw</title>
+  <meta name="description" content="Compare top dog and cat products side by side with pros, cons, buyer recommendations, and FAQs." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="reviews">
+
+  <header class="hero-banner hero-banner--compact">
+    <div class="container">
+      <div class="site-header">
+        <a href="index.html" class="brand-link">
+          <img src="images/logo.svg" alt="That's My Paw logo" class="brand-logo" width="44" height="44" />
+          <span class="brand-text">
+            <span class="brand-name">That's My <span class="brand-accent">Paw</span></span>
+            <span class="brand-tagline">Love &bull; Care &bull; Share</span>
+          </span>
+        </a>
+        <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+      </div>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link" data-nav-page="home">Home</a></li>
+          <li class="nav-item nav-item-dropdown">
+            <button type="button" class="dropdown-trigger" data-nav-page="dogs" aria-expanded="false">
+              <span>Dogs</span><span class="dropdown-arrow" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="dogs.html#food-treats">Food &amp; Treats</a></li>
+              <li><a href="dogs.html#fountains-bowls">Water Fountains &amp; Bowls</a></li>
+              <li><a href="dogs.html#beds-furniture">Beds &amp; Furniture</a></li>
+              <li><a href="dogs.html#toys">Toys</a></li>
+              <li><a href="dogs.html#grooming">Grooming</a></li>
+              <li><a href="dogs.html#collars-leashes">Collars &amp; Leashes</a></li>
+              <li><a href="dogs.html#travel-carriers">Travel &amp; Carriers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item-dropdown">
+            <button type="button" class="dropdown-trigger" data-nav-page="cats" aria-expanded="false">
+              <span>Cats</span><span class="dropdown-arrow" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="cats.html#food-treats">Food &amp; Treats</a></li>
+              <li><a href="cats.html#fountains-bowls">Water Fountains &amp; Bowls</a></li>
+              <li><a href="cats.html#beds-furniture">Beds &amp; Furniture</a></li>
+              <li><a href="cats.html#toys">Toys</a></li>
+              <li><a href="cats.html#grooming">Grooming</a></li>
+              <li><a href="cats.html#cat-trees">Cat Trees</a></li>
+              <li><a href="cats.html#travel-carriers">Travel &amp; Carriers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="pet-care.html" class="nav-link" data-nav-page="pet-care">Pet Care</a></li>
+          <li class="nav-item"><a href="reviews.html" class="nav-link" data-nav-page="reviews">Reviews</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" data-nav-page="about">About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link" data-nav-page="contact">Contact</a></li>
+          <li class="nav-item nav-subscribe-item"><a href="index.html#subscribe" class="btn-nav-subscribe">Subscribe</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <h1 class="hero-title">All Pet Reviews &amp; Roundups</h1>
+        <p class="hero-subtitle">Filter every reviewed item by pet type and compare our highest-rated everyday essentials.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="search-section" aria-label="Product Search">
+    <div class="container">
+      <form id="search-form" class="search-form" role="search">
+        <label for="search-input" class="sr-only">Search for pet products</label>
+        <input type="search" id="search-input" class="search-input" placeholder="Search for pet products..." autocomplete="off" />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+      <div id="search-status" class="search-status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <div class="filter-bar" aria-label="Filter reviews by pet">
+          <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="dogs">Dogs</button>
+          <button type="button" class="filter-btn" data-filter="cats">Cats</button>
+        </div>
+
+        <div id="product-grid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- SAMPLE ROUNDUP LAYOUT: Comparison Table + Pros/Cons + Who It's For + FAQ -->
+    <section class="page-section">
+      <div class="container">
+
+        <article class="content-card">
+          <h2>Top Picks Comparison Roundup</h2>
+          <p>Quickly compare our three highest-rated everyday pet essentials side by side.</p>
+
+          <div class="table-scroll">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Best For</th>
+                  <th>Rating</th>
+                  <th>Key Highlight</th>
+                  <th>Where to Check</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Orthopedic Bolster Dog Bed</strong></td>
+                  <td>Senior &amp; large-breed dogs</td>
+                  <td>4.9 / 5.0</td>
+                  <td>Washable cover &amp; joint-support foam</td>
+                  <td><a href="#" target="_blank" rel="nofollow sponsored noopener" style="color: var(--color-primary); font-weight: 600;">Check on Amazon</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Stainless Steel Cat Fountain</strong></td>
+                  <td>Picky drinkers &amp; multi-cat homes</td>
+                  <td>4.9 / 5.0</td>
+                  <td>Dishwasher-safe bowl &amp; quiet pump</td>
+                  <td><a href="#" target="_blank" rel="nofollow sponsored noopener" style="color: var(--color-primary); font-weight: 600;">Check on Amazon</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Reflective No-Pull Dog Harness</strong></td>
+                  <td>Daily walks &amp; leash training</td>
+                  <td>4.8 / 5.0</td>
+                  <td>Dual-clip chest support &amp; breathable mesh</td>
+                  <td><a href="#" target="_blank" rel="nofollow sponsored noopener" style="color: var(--color-primary); font-weight: 600;">Check on Amazon</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="content-card">
+          <h2>Stainless Steel Cat Fountain: Pros &amp; Cons</h2>
+          <div class="two-col-grid">
+            <div class="pros-box">
+              <h3>What We Love (Pros)</h3>
+              <ul class="clean-list">
+                <li>Hygienic 304 stainless steel resists chin acne and odors.</li>
+                <li>Whisper-quiet pump stays under 30 dB even at night.</li>
+                <li>Large water reservoir works well for 1–3 cats.</li>
+              </ul>
+            </div>
+            <div class="cons-box">
+              <h3>Things to Keep in Mind (Cons)</h3>
+              <ul class="clean-list">
+                <li>Replacement charcoal filters need changing every 3–4 weeks.</li>
+                <li>Requires a nearby wall outlet for the USB power adapter.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="content-card">
+          <h2>Who It's For</h2>
+          <div class="two-col-grid">
+            <div>
+              <h3>Great Match If...</h3>
+              <ul class="clean-list">
+                <li>Your cat ignores still water bowls or prefers drinking from the sink tap.</li>
+                <li>You want durable, easy-to-sanitize stainless steel instead of plastic.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Skip It If...</h3>
+              <ul class="clean-list">
+                <li>You want a completely cord-free battery-powered bowl for outdoor patios.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="content-card">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>How do you choose the products featured on That's My Paw?</span>
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                We evaluate material safety, long-term durability, ease of cleaning, and verified feedback from everyday US &amp; UK pet owners before adding an item to our list.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Why don't you display product prices directly on cards?</span>
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                Amazon prices and stock change frequently. Clicking "Check Price on Amazon" always shows you the live, accurate price in your region.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Does using your Amazon links cost me anything extra?</span>
+                <span aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                Never! You pay the exact same price on Amazon, and a small commission helps keep our independent pet guides free.
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <p class="disclosure-strip">As an Amazon Associate, I earn from qualifying purchases.</p>
+
+  <button type="button" id="more-panel-btn" class="fab-more" aria-label="Open About Us and site links" aria-expanded="false" aria-controls="bottom-sheet">&#8942;</button>
+  <div id="sheet-overlay" class="sheet-overlay"></div>
+  <aside id="bottom-sheet" class="bottom-sheet" aria-hidden="true" aria-label="About Us and Footer Links">
+    <div class="sheet-handle" aria-hidden="true"></div>
+    <div class="sheet-top">
+      <div class="sheet-brand">
+        <img src="images/logo.svg" alt="" width="34" height="34" />
+        <span>That's My <span class="sheet-brand-accent">Paw</span></span>
+      </div>
+      <button type="button" id="sheet-close-btn" class="sheet-close" aria-label="Close panel">&times;</button>
+    </div>
+    <div class="sheet-about">
+      <h2>About Us</h2>
+      <p>We are lifelong dog and cat lovers who research, compare, and recommend practical, safe, and durable pet essentials so you can shop with confidence.</p>
+      <a href="about.html" class="btn-outline">Learn More</a>
+    </div>
+    <nav class="sheet-links" aria-label="Footer navigation">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="sheet-copyright">&copy; 2026 That's My Paw. All rights reserved.</p>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

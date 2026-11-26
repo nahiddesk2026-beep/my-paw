@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>That's My Paw — Honest Dog &amp; Cat Product Reviews</title>
+  <meta name="description" content="Trusted pet product reviews, top Amazon picks, and everyday care guides for happy dogs and cats in the US &amp; UK." />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+
+  <!-- =======================================================================
+       TOP HERO SECTION (Banner Background + Header Row + Menu + Headline)
+       ======================================================================= -->
+  <header class="hero-banner">
+    <div class="container">
+
+      <!-- Header Row: Logo + Brand Name + Tagline (left), Mobile Menu Button (right) -->
+      <div class="site-header">
+        <a href="index.html" class="brand-link">
+          <img src="images/logo.svg" alt="That's My Paw logo" class="brand-logo" width="44" height="44" />
+          <span class="brand-text">
+            <span class="brand-name">That's My <span class="brand-accent">Paw</span></span>
+            <span class="brand-tagline">Love &bull; Care &bull; Share</span>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          &#9776;
+        </button>
+      </div>
+
+      <!-- CHANGE MENU ITEMS HERE (Keep identical across all HTML pages) -->
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" data-nav-page="home">Home</a>
+          </li>
+
+          <li class="nav-item nav-item-dropdown">
+            <button type="button" class="dropdown-trigger" data-nav-page="dogs" aria-expanded="false">
+              <span>Dogs</span>
+              <span class="dropdown-arrow" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="dogs.html#food-treats">Food &amp; Treats</a></li>
+              <li><a href="dogs.html#fountains-bowls">Water Fountains &amp; Bowls</a></li>
+              <li><a href="dogs.html#beds-furniture">Beds &amp; Furniture</a></li>
+              <li><a href="dogs.html#toys">Toys</a></li>
+              <li><a href="dogs.html#grooming">Grooming</a></li>
+              <li><a href="dogs.html#collars-leashes">Collars &amp; Leashes</a></li>
+              <li><a href="dogs.html#travel-carriers">Travel &amp; Carriers</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item nav-item-dropdown">
+            <button type="button" class="dropdown-trigger" data-nav-page="cats" aria-expanded="false">
+              <span>Cats</span>
+              <span class="dropdown-arrow" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="cats.html#food-treats">Food &amp; Treats</a></li>
+              <li><a href="cats.html#fountains-bowls">Water Fountains &amp; Bowls</a></li>
+              <li><a href="cats.html#beds-furniture">Beds &amp; Furniture</a></li>
+              <li><a href="cats.html#toys">Toys</a></li>
+              <li><a href="cats.html#grooming">Grooming</a></li>
+              <li><a href="cats.html#cat-trees">Cat Trees</a></li>
+              <li><a href="cats.html#travel-carriers">Travel &amp; Carriers</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="pet-care.html" class="nav-link" data-nav-page="pet-care">Pet Care</a>
+          </li>
+          <li class="nav-item">
+            <a href="reviews.html" class="nav-link" data-nav-page="reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" data-nav-page="about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" data-nav-page="contact">Contact</a>
+          </li>
+          <li class="nav-item nav-subscribe-item">
+            <a href="index.html#subscribe" class="btn-nav-subscribe">Subscribe</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- CHANGE HERO TEXT HERE -->
+      <div class="hero-content">
+        <h1 class="hero-title">Happy Pets, Happier You!</h1>
+        <p class="hero-subtitle">
+          Honest reviews, vet-inspired favorites, and everyday essentials for dogs and cats across the US &amp; UK.
+        </p>
+        <a href="#top-picks" class="btn-yellow">Explore Now</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       SEARCH BAR SECTION
+       ======================================================================= -->
+  <section class="search-section" aria-label="Product Search">
+    <div class="container">
+      <form id="search-form" class="search-form" role="search">
+        <label for="search-input" class="sr-only">Search for pet products</label>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Search for pet products..."
+          autocomplete="off"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+      <div id="search-status" class="search-status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       MAIN CONTENT: LATEST PET REVIEWS & TOP PICKS + SUBSCRIBE
+       ======================================================================= -->
+  <main>
+    <section id="top-picks" class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Latest Pet Reviews &amp; Top Picks</h2>
+          <a href="reviews.html" class="section-link">View All &rarr;</a>
+        </div>
+
+        <!-- Product Cards are automatically rendered here from js/products.js -->
+        <div id="product-grid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section (Connect Mailchimp or Formspree later) -->
+    <section id="subscribe" class="page-section">
+      <div class="container">
+        <div class="subscribe-card">
+          <h2 class="subscribe-title">Get Weekly Pet Picks &amp; Care Tips</h2>
+          <p class="subscribe-subtitle">
+            Join fellow dog and cat parents for honest gear roundups, seasonal safety checklists, and new top picks.
+          </p>
+
+          <!-- TO CONNECT MAILCHIMP / FORMSPREE LATER: Add action="YOUR_URL" method="POST" -->
+          <form id="subscribe-form" class="subscribe-form" novalidate>
+            <label for="subscribe-email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="subscribe-email"
+              class="subscribe-input"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="btn-yellow">Subscribe</button>
+          </form>
+          <p id="subscribe-message" class="subscribe-message" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       VISIBLE AMAZON AFFILIATE DISCLOSURE LINE
+       ======================================================================= -->
+  <p class="disclosure-strip">
+    As an Amazon Associate, I earn from qualifying purchases.
+  </p>
+
+  <!-- =======================================================================
+       BOTTOM 3-DOT BUTTON & SLIDE-UP ABOUT / FOOTER PANEL
+       ======================================================================= -->
+  <button
+    type="button"
+    id="more-panel-btn"
+    class="fab-more"
+    aria-label="Open About Us and site links"
+    aria-expanded="false"
+    aria-controls="bottom-sheet"
+  >
+    &#8942;
+  </button>
+
+  <div id="sheet-overlay" class="sheet-overlay"></div>
+
+  <aside id="bottom-sheet" class="bottom-sheet" aria-hidden="true" aria-label="About Us and Footer Links">
+    <div class="sheet-handle" aria-hidden="true"></div>
+
+    <div class="sheet-top">
+      <div class="sheet-brand">
+        <img src="images/logo.svg" alt="" width="34" height="34" />
+        <span>That's My <span class="sheet-brand-accent">Paw</span></span>
+      </div>
+      <button type="button" id="sheet-close-btn" class="sheet-close" aria-label="Close panel">&times;</button>
+    </div>
+
+    <div class="sheet-about">
+      <h2>About Us</h2>
+      <p>
+        We are lifelong dog and cat lovers who research, compare, and recommend practical, safe, and durable pet essentials so you can shop with confidence.
+      </p>
+      <a href="about.html" class="btn-outline">Learn More</a>
+    </div>
+
+    <nav class="sheet-links" aria-label="Footer navigation">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <p class="sheet-copyright">&copy; 2026 That's My Paw. All rights reserved.</p>
+  </aside>
+
+  <!-- External JavaScript Files -->
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

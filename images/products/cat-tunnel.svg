@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Collapsible Crinkle Cat Play Tunnel">
+  <rect width="400" height="300" fill="#F4F7FD"/>
+  <rect x="95" y="95" width="210" height="110" rx="55" fill="#1F4FE0"/>
+  <ellipse cx="145" cy="150" rx="38" ry="55" fill="#FFD21F"/>
+  <ellipse cx="145" cy="150" rx="26" ry="40" fill="#0F2A7A"/>
+  <circle cx="255" cy="120" r="14" fill="#FFD21F"/>
+  <line x1="255" y1="95" x2="255" y2="106" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+</svg>

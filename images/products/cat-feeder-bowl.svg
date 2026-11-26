@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Elevated Ceramic Cat Slow Feeder Bowl">
+  <rect width="400" height="300" fill="#F4F7FD"/>
+  <ellipse cx="200" cy="222" rx="95" ry="20" fill="#DCE5F8"/>
+  <path d="M135 165h130l-12 52c-2 8-10 14-20 14h-66c-10 0-18-6-20-14l-12-52z" fill="#1F4FE0"/>
+  <ellipse cx="200" cy="130" rx="88" ry="38" fill="#FFFFFF" stroke="#1F4FE0" stroke-width="8"/>
+  <ellipse cx="200" cy="130" rx="64" ry="24" fill="#E8EFFD"/>
+  <circle cx="178" cy="128" r="8" fill="#FFD21F"/>
+  <circle cx="202" cy="136" r="8" fill="#FFD21F"/>
+  <circle cx="222" cy="126" r="8" fill="#FFD21F"/>
+</svg>
